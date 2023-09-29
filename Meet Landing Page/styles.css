@@ -1,0 +1,200 @@
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+.logo{
+    margin: 1em auto 4em auto;
+}
+.header-elements{
+    display: grid;
+    grid-template-columns: 0.7fr 1fr 0.7fr;
+    gap:20px;
+}
+
+.left-image,.right-image{
+    max-width: 100%;
+}
+.left-image{
+    margin-left: -3em;
+}
+
+.right-image{
+    margin-left: 3em;
+}
+
+
+/*Buttons*/
+button{
+    color: white;
+    padding: 1em 3em;
+    border: none;
+    border-radius: 1.6em;
+    
+}
+
+.blue-button{
+     background-color: #4D96A9;
+     display: inline;
+}
+
+.blue-button:hover{
+  background-color: #BFE3F9;  
+}
+
+.purple-button{
+    background-color:#855FB1; ;
+}
+
+.purple-button:hover{
+    background-color: #D9B8FF;
+}
+
+/*Buttons*/
+
+
+/*Fonts */
+h1{
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+h3{
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+}
+
+p:not(.number,.blue-text){
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.625rem;
+}
+
+/*End*/
+.number{
+    position: relative;
+    z-index: 2;
+    border: 1px solid #87879D;
+    border-radius: 50%;
+    background-color: white;
+    margin: 7em auto 0.5em auto;
+    padding: 1em;
+    width:18px;
+}
+
+main{
+    text-align: center;
+    margin-top: 3em;
+}
+.main-images{
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.main-images>*{
+    max-width: 20%;
+    border-radius: 10px;
+}
+
+.blue-text{
+    text-transform: capitalize;
+    line-height: 1.625rem;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-top: 5em;
+    color: #4D96A9;
+    letter-spacing: 4px;
+}
+
+/*footer elements*/
+footer{
+    text-align: left;
+    height: 50vh;
+    background-color: rgb(77,160,158,0.83);
+    color: white;
+    display: grid;
+    grid-template-columns: 0.5fr 0.7fr 0.4fr;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+footer h3{
+    margin-left: 0.6em;
+}
+
+footer p{
+    margin-left: 1em;
+}
+
+section{
+    position: relative;
+    z-index: 1;   
+    background-image: url(./assets/desktop/image-footer.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+/*Resposiveness*/
+
+.hidden{
+    display: none;
+}
+
+@media (max-width:769px) {
+    html{
+        font-size: 12px;
+    }
+    .header-elements{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.6fr;
+    }
+    section{
+        background-image: url(./assets/tablet/image-footer.jpg);
+        background-size: 100%;
+
+    }
+    .hidden{
+        display: initial;
+        max-width: 100%;
+    }
+    .left-image,.right-image{
+        display: none;
+    }
+    .middle-elements{
+        font-size: 40px;
+        
+    }
+    h3{
+        font-size: 2rem;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-height: 100%;
+    }
+    p:not(.number,.blue-text){
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:480px){
+    html{
+        font-size: 10px;
+    }
+    section{
+        background-image: url(./assets/mobile/image-footer.jpg);
+        background-size: 100%;
+
+    }
+    footer{
+        height:30vh;
+        justify-content: center;
+    }
+}
