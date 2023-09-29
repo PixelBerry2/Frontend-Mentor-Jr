@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <span><!-- displays site properly based on user's device --></span>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title> Age calculator app</title>
+
+  
+</head>
+<body>
+
+  <main>
+    <header>
+      <form action="" method="dialog">
+        <div class="day-cntr">
+          <label for="date">DAY</label> <br>
+          <input type="text" name="date" id="date" placeholder="DD"/>
+          <p class="day-error-message hidden msg" ></p>
+        </div>
+        
+        <div class="month-cntr">
+          <label for="month" style="padding-left: 0.5em;">MONTH</label> <br>
+          <input type="text" name="month" id="month" placeholder="MM"/>
+          <p class="month-error-message hidden msg"></p>
+
+        </div>
+        <div class="year-cntr">
+          <label for="year">YEAR</label> <br>
+          <input type="text" name="year" id="year" placeholder="YYYY"/>
+          <p class="year-error-message hidden msg"></p>
+        </div>
+        <button id="submit-btn"><img id="icon-arrow" src="./assets/images/icon-arrow.svg"></button>
+      </form>
+    </header>
+
+    <section>
+      <p><span id="year-slot">--</span> years</p>
+      <p><span id="month-slot">--</span> months</p>
+      <p><span id="day-slot">--</span> days</p>
+    </section>
+  </main>
+  
+  <div class="attribution" style="margin-top: 2rem">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <em>Jane Ahone</em>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
