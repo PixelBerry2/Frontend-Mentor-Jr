@@ -1,6 +1,18 @@
-# Frontend-Mentor-Jr
-This repository contains solutions to frontend mentor junior challenges
 
-Age Calculator: https://calculate-age0923.netlify.app/
-Meet Landing Page: https://app.netlify.com/sites/stupendous-duckanoo-34268b/
-Tip Calculator:https://app.netlify.com/sites/tip-calculator-app2103/
+
+# Frontend Mentor Junior Challenges
+
+This repository contains solutions to various **Frontend Mentor Junior** challenges:
+
+### Projects
+
+- **Age Calculator**  
+  [View Live Project](https://calculate-age0923.netlify.app/)
+
+- **Meet Landing Page**  
+  [View Live Project](https://stupendous-duckanoo-34268b.netlify.app/)
+
+- **Tip Calculator**  
+  [View Live Project](https://tip-calculator-app2103.netlify.app/)
+
+
